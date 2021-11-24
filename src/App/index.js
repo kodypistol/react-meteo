@@ -14,19 +14,19 @@ function App() {
     <BrowserRouter>
       <Header />
       <Switch>
-        <Route path="/first-component">
+        <Route exact path="/first-component">
           <FirstComponentExercice />
         </Route>
-        <Route path="/styling-components">
+        <Route exact path="/styling-components">
           <StylingComponentsExercice />
         </Route>
-        <Route path="/spotify">
+        <Route exact path="/spotify">
           <SpotifyExercice />
         </Route>
-        <Route path="/contexts">
+        <Route exact path="/contexts">
           <ContextsExercice />
         </Route>
-        <Route path="/">
+        <Route exact path="/">
           <FirstComponentExercice />
         </Route>
       </Switch>
