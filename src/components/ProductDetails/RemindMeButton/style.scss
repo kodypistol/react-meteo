@@ -1,0 +1,21 @@
+.remind-btn {
+    background-color: black;
+    border-radius: 1000px;
+    position: fixed;
+    bottom: 50px;
+    left: 50%;
+    transform: translateX(-50%);
+
+    color: white;
+    width: 70vw;
+    height: 55px;
+    text-decoration: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    &:not(.active) {
+        background-color: #CCCCCC;
+        color: black;
+    }
+}
