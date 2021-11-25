@@ -30,9 +30,26 @@ function Slider (props) {
         }
     }
 
+    // Swipe detection
+    let xDown = 0;
+
+    function onMouseDown (event) {
+        xDown = event.clientX;
+    }
+
+    function onMouseUp (event) {
+        let xDir = xDown - event.clientX;
+
+        if(xDir > 0) {
+            back();
+        }else {
+            next();
+        }
+    }
+
     return (
         <div className="slider">
-            <ul className="image-list">
+            <ul className="image-list" onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
                 {imagesUrl.map((image, index) => (
                     <li key={index}>
                         <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
