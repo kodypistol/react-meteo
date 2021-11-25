@@ -34,22 +34,27 @@ function Slider (props) {
     let xDown = 0;
 
     function onMouseDown (event) {
+        console.log("Touch start");
         xDown = event.clientX;
     }
 
     function onMouseUp (event) {
+        console.log("Touch end");
         let xDir = xDown - event.clientX;
 
-        if(xDir > 0) {
-            back();
-        }else {
-            next();
+        if(Math.abs(xDir) > 40) { // Min swipe distance
+            if(xDir > 0) { // Wich swipe direction ?
+                back();
+            }else {
+                next();
+            }
         }
+
     }
 
     return (
         <div className="slider">
-            <ul className="image-list" onMouseDown={onMouseDown} onMouseUp={onMouseUp}>
+            <ul className="image-list" onTouchStart={onMouseDown} onTouchEnd={onMouseUp} onTouchCancel={onMouseUp}>
                 {imagesUrl.map((image, index) => (
                     <li key={index}>
                         <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
