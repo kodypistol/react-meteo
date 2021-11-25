@@ -10,9 +10,6 @@ import CTARemindingButton from 'components/CTARemindingButton'
 import { Link } from 'react-router-dom';
 import StylingComponents from 'components/StylingComponents'
 
-import styles from './Product.module.css'
-
-
 const Product = () => {
 
 

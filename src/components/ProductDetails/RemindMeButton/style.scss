@@ -7,7 +7,7 @@
     transform: translateX(-50%);
 
     color: white;
-    width: 70vw;
+    width: calc(100vw - (15.92px * 2));
     height: 55px;
     text-decoration: none;
     display: flex;
@@ -17,5 +17,6 @@
     &:not(.active) {
         background-color: #CCCCCC;
         color: black;
+        cursor: not-allowed;
     }
 }

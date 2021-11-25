@@ -12,7 +12,7 @@ function RemindMeButton (props) {
     }
 
     return (
-        <Link to="/" className="remind-btn">{props.text ? props.text : "Me prévenir"}</Link>
+        <div to="/" className="remind-btn">{props.text ? props.text : "Me prévenir"}</div>
     );
 }
 
