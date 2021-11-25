@@ -13,7 +13,6 @@ function Slider (props) {
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
     function next() {
-        console.log("next image");
         if(currentImageIndex === imagesUrl.length - 1) {
             setCurrentImageIndex(0);
         }

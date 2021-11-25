@@ -1,6 +1,8 @@
 import React from 'react';
 
+import Title from 'components/Title';
 import CloseButton from "components/CloseButton";
+import RemindMeButton from "components/ProductDetails/RemindMeButton";
 import Slider from "components/ProductDetails/Slider"
 
 function ProductDetails (props) {
@@ -8,12 +10,12 @@ function ProductDetails (props) {
         <section class="product-details">
             <div className="actions">
                 <CloseButton/>
-                {/* Me prévenir */}
+                <RemindMeButton isActive={false}/>
             </div>
             
             <Slider/>
             <div className="details">
-                {/* Title */}
+                <Title subtitle="Air Jordan 1" title="Acclimate" price="169,99 € Stock épuisé"/>
                 <p><strong>Disponible {props.avaliableDate}</strong></p>
                 <p>{props.gender} {props.minSize} - {props.maxSize}</p>
 
