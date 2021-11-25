@@ -1,11 +1,10 @@
 import React from 'react';
 
-const ShareButton = () => {
+const CTAShareButton = () => {
 
   const sharePage = () => {
     if (navigator.share) {
       navigator.share({
-          title: 'Chaussure!',
           text: 'Mettre le lien des chaussures',
           url: window.location.href
         }).then(() => {
@@ -31,4 +30,4 @@ const ShareButton = () => {
 
 }
 
-export default ShareButton;
+export default CTAShareButton;

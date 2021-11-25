@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 
 
-const LikeButton = () => {
+const CTALikeButton = () => {
   const [isliked, setLiked] = useState(false);
 
   return(
@@ -15,4 +15,4 @@ const LikeButton = () => {
   );
 }
 
-export default LikeButton;
+export default CTALikeButton;
