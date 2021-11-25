@@ -1,5 +1,8 @@
+//jshint esversion:6
+
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
+import Product from 'components/Product';
 
 function App() {
   return (
@@ -7,7 +10,7 @@ function App() {
       {/* <Header /> */}
       <Switch>
         <Route exact path="/">
-          Root
+          <Product />
         </Route>
         <Route path="/">
           Erreur 404
