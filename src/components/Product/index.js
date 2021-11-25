@@ -9,9 +9,6 @@ import CTAShareButton from 'components/CTAShareButton'
 import CTARemindingButton from 'components/CTARemindingButton'
 import { Link } from 'react-router-dom';
 
-import styles from './Product.module.css'
-
-
 const Product = () => {
 
 
