@@ -1,14 +1,14 @@
 .slider {
     padding: 0;
     margin: 0;
+    min-width: 100vw;
 
     .image-list {
         width: 100%;
-        height: 400px;
+        height: 500px;
         padding: 0;
         margin: 0;
         position: relative;
-        background-color: blue;
         list-style: none;
 
         li {
@@ -18,10 +18,10 @@
             width: 100%;
             height: 100%;
             max-width: 100vw;
+            overflow: hidden;
 
             img, .image-placeholder {
                 display: block;
-                margin: 0 auto;
                 height: 100%;
 
                 &:not(.active) {
@@ -30,4 +30,8 @@
             }
         }
     }
+}
+
+.actions {
+    display: none;
 }
