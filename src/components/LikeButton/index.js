@@ -1,14 +1,14 @@
 import React, { useState } from "react";
 
+
 const LikeButton = () => {
-  const [liked, setLiked] = useState(null);
+  const [isliked, setLiked] = useState(false);
 
   return(
-    <button onClick={() => setLiked(!liked)}
-    className={"like-button-wrapper", {liked}}>
+    <button onClick={() => setLiked(!isliked)}>
 
     <div className="like-button">
-      <span>Like</span>
+      <span>{isliked ? "You Liked" : "Like"}</span>
     </div>
 
     </button>
