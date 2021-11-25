@@ -6,10 +6,10 @@ const ShareButton = () => {
     if (navigator.share) {
       navigator.share({
           title: 'Chaussure!',
-          text: 'Chauchaussure',
+          text: 'Mettre le lien des chaussures',
           url: window.location.href
         }).then(() => {
-          console.log('Thanks for sharing!');
+          console.log('Shared!');
         })
         .catch(err => {
           console.log(`Couldn't share because of`, err.message);
@@ -24,7 +24,7 @@ const ShareButton = () => {
   return (
     <div>
       <button className = "share-btn" onClick = {sharePage}>
-      Clique moi
+      Partager
       </button>
     </div>
   );
