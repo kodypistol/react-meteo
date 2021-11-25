@@ -2,22 +2,30 @@ import React from 'react';
 
 const ShareButton = () => {
 
-  if (navigator.share) {
-    navigator.share({
-      title: 'web.dev',
-      text: 'Check out web.dev.',
-      url: 'https://web.dev/',
-    })
-      .then(() => console.log('Successful share'))
-      .catch((error) => console.log('Error sharing', error));
+  const sharePage = () => {
+    if (navigator.share) {
+      navigator.share({
+          title: 'Chaussure!',
+          text: 'Chauchaussure',
+          url: window.location.href
+        }).then(() => {
+          console.log('Thanks for sharing!');
+        })
+        .catch(err => {
+          console.log(`Couldn't share because of`, err.message);
+        });
+    } else {
+      console.log('web share not supported');
+    }
+
   }
 
-  return(
-    <div>
-      <button onClick={"navigator.share()"}>
-        Clique moi
-      </button>
 
+  return (
+    <div>
+      <button className = "share-btn" onClick = {sharePage}>
+      Clique moi
+      </button>
     </div>
   );
 
