@@ -1,0 +1,12 @@
+.close-btn {
+    position: fixed;
+    top: 100px;
+    right: 100px;
+    z-index: 1000;
+    
+    button {
+        background-color: transparent;
+        border: none;
+        cursor: pointer;
+    }
+}

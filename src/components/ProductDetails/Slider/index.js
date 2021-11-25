@@ -1,16 +1,19 @@
 import React from 'react';
 import "./style.css";
 
-function Slider () {
+import Image from "components/Image";
+
+function Slider (props) {
     const imagesUrl = [
-        "https://picsum.photos/300/200",
-        "https://picsum.photos/200/300",
-        "https://picsum.photos/300/300"
+        "https://picsum.photos/300/300",
+        "https://picsum.photos/500/300",
+        "https://picsum.photos/800/300"
     ];
     
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
 
     function next() {
+        console.log("next image");
         if(currentImageIndex === imagesUrl.length - 1) {
             setCurrentImageIndex(0);
         }
@@ -30,12 +33,19 @@ function Slider () {
 
     return (
         <div className="slider">
-            <p>{currentImageIndex} <br /> {imagesUrl[currentImageIndex]}</p>
-            <ul className="slider-list" id="slider">
-                <li><img src={imagesUrl[currentImageIndex]} alt="Slider component" /></li>
+            <ul className="image-list">
+                {imagesUrl.map((image, index) => (
+                    <li key={index}>
+                        <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
+                    </li>
+                ))}
             </ul>
-            <button onClick={next}>Suivant</button>
-            <button onClick={back}>Précédent</button>
+            
+            <div className="actions">
+                <button onClick={next}>Suivant</button>
+                <button onClick={back}>Précédent</button>
+            </div>
+
         </div>
     );
 }
