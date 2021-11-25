@@ -24,5 +24,6 @@
 .remind-btn:not(.active) {
   background-color: #CCCCCC;
   color: black;
+  cursor: not-allowed;
 }
 /*# sourceMappingURL=style.css.map */

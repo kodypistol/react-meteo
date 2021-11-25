@@ -22,13 +22,13 @@
   max-width: 100vw;
 }
 
-.slider .image-list li img {
+.slider .image-list li img, .slider .image-list li .image-placeholder {
   display: block;
   margin: 0 auto;
   height: 100%;
 }
 
-.slider .image-list li img:not(.active) {
+.slider .image-list li img:not(.active), .slider .image-list li .image-placeholder:not(.active) {
   display: none;
 }
 /*# sourceMappingURL=style.css.map */

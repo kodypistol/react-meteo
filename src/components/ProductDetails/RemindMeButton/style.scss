@@ -17,5 +17,6 @@
     &:not(.active) {
         background-color: #CCCCCC;
         color: black;
+        cursor: not-allowed;
     }
 }
