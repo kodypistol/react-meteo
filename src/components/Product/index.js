@@ -7,6 +7,7 @@ import Image from 'components/Image';
 import CTALikeButton from 'components/CTALikeButton'
 import CTAShareButton from 'components/CTAShareButton'
 import CTARemindingButton from 'components/CTARemindingButton'
+import { Link } from 'react-router-dom';
 
 import styles from './Product.module.css'
 
@@ -21,6 +22,8 @@ const Product = () => {
       <CTALikeButton />
       <CTAShareButton />
       <CTARemindingButton />
+      <hr />
+      <Link to="/details"> Voir les détails</Link>
     </div>
   );
 };
