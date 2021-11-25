@@ -5,7 +5,7 @@ const CTAShareButton = () => {
   const sharePage = () => {
     if (navigator.share) {
       navigator.share({
-          text: 'Mettre le lien des chaussures',
+          text: 'Via Nike SNKRS:',
           url: window.location.href
         }).then(() => {
           console.log('Shared!');

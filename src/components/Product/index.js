@@ -6,6 +6,7 @@ import Title from 'components/Title';
 import Image from 'components/Image';
 import CTALikeButton from 'components/CTALikeButton'
 import CTAShareButton from 'components/CTAShareButton'
+import CTARemindingButton from 'components/CTARemindingButton'
 
 
 const Product = () => {
@@ -17,6 +18,7 @@ const Product = () => {
       <Image src="" alt="chaussure" />
       <CTALikeButton />
       <CTAShareButton />
+      <CTARemindingButton />
     </div>
   );
 };
