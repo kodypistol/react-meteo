@@ -1,12 +1,18 @@
 import React from 'react';
-import styles from './styles.module.css';
+import { Link } from 'react-router-dom';
+import "./style.css";
 
 const Header = () => {
 
   return(
-    <div className="header">
-      <p>Header</p>
+    <nav className="header-navigation">
+    <div className="links">
+      <Link to="/" className="active">Feed</Link>
+      <Link to="/">En stock</Link>
+      <Link to="/">A venir</Link>
     </div>
+    <button className="search-btn">Rechercher</button>
+  </nav>
 
   );
 }

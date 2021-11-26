@@ -17,16 +17,6 @@ const Product = () => {
 
   return (
     <section className="product-list">
-      
-      {/* Header navigation links */}
-      <nav className="header-navigation">
-        <div className="links">
-          <Link to="/" className="active">Feed</Link>
-          <Link to="/">En stock</Link>
-          <Link to="/">A venir</Link>
-        </div>
-        <button className="search-btn">Rechercher</button>
-      </nav>
 
       {/* Products feed */}
       <ul>
@@ -38,20 +28,6 @@ const Product = () => {
             <div className="padding">
               <Title subtitle={product.group} title={product.name} />
             </div>
-
-
-  return (
-    <div>
-      <Title subtitle="Air Jordan 1" title="Acclimate"/>
-      <Image src="" alt="chaussure" />
-      <CTALikeButton />
-      <CTAShareButton />
-      <CTARemindingButton />
-      <hr />
-      <Link to="/details"> Voir les détails</Link>
-
-      <StylingComponents />
-    </div>
 
             {/* Preview image */}
             <Link to="/details/0">
