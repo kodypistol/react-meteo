@@ -2,6 +2,7 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
+import Header from 'components/Header'
 import Product from 'components/Product';
 
 import ProductDetails from "components/ProductDetails";
@@ -9,7 +10,7 @@ import ProductDetails from "components/ProductDetails";
 function App() {
   return (
     <BrowserRouter>
-      {/* <Header /> */}
+    <Header />
       <Switch>
         <Route exact path="/details">
           <ProductDetails avaliableDate="09/12, 09:00" gender="Homme" minSize="35.5" maxSize="49.5" />

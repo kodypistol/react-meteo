@@ -30,21 +30,33 @@ function Slider (props) {
         }
     }
 
+    // Swipe detection
+    let xDown = 0;
+
+    function onTouchStart (event) {
+        xDown = event.touches[0].screenX;
+    }
+
+    function onTouchEnd (event) {        
+        let xDir = xDown - event.changedTouches[0].screenX;
+        if(Math.abs(xDir) > 40) { // Min swipe distance
+            if(xDir > 0) { // Wich swipe direction ?
+                back();
+            }else {
+                next();
+            }
+        }
+    }
+
     return (
         <div className="slider">
-            <ul className="image-list">
+            <ul className="image-list" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
                 {imagesUrl.map((image, index) => (
                     <li key={index}>
                         <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
                     </li>
                 ))}
             </ul>
-            
-            <div className="actions">
-                <button onClick={next}>Suivant</button>
-                <button onClick={back}>Précédent</button>
-            </div>
-
         </div>
     );
 }
