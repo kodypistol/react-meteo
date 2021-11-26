@@ -33,7 +33,7 @@ const Product = () => {
               <Title subtitle="Air Jordan 1" title="Acclimate"/>
             </div>
 
-<<<<<<< HEAD
+
   return (
     <div>
       <Title subtitle="Air Jordan 1" title="Acclimate"/>
@@ -46,7 +46,7 @@ const Product = () => {
 
       <StylingComponents />
     </div>
-=======
+
             {/* Preview image */}
             <Link to="/details">
               <Image src="https://picsum.photos/500/500" alt="chaussure" className="preview" />
@@ -81,7 +81,7 @@ const Product = () => {
           </div></li>
       </ul>
     </section>
->>>>>>> 0bed7dd48e8198d8f4e478c800540ac0100a0132
+
   );
 };
 
