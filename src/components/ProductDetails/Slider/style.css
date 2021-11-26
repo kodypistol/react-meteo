@@ -32,8 +32,4 @@
 .slider .image-list li img:not(.active), .slider .image-list li .image-placeholder:not(.active) {
   display: none;
 }
-
-.actions {
-  display: none;
-}
 /*# sourceMappingURL=style.css.map */

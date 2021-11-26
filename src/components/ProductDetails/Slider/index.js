@@ -57,12 +57,6 @@ function Slider (props) {
                     </li>
                 ))}
             </ul>
-            
-            <div className="actions">
-                <button onClick={next}>Suivant</button>
-                <button onClick={back}>Précédent</button>
-            </div>
-
         </div>
     );
 }

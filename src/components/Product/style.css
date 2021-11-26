@@ -1,0 +1,31 @@
+.product {
+  background-color: green;
+}
+
+.product .preview {
+  width: 100%;
+}
+
+.product .padding {
+  padding: 15.92px;
+}
+
+.product .actions, .product .share {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.product .actions {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.product .share button:not(:last-child) {
+  margin-right: 20px;
+}
+/*# sourceMappingURL=style.css.map */
