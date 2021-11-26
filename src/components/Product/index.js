@@ -10,10 +10,13 @@ import CTARemindingButton from 'components/CTARemindingButton'
 import { Link } from 'react-router-dom';
 
 import "./style.css";
+import products from "json/products.json";
 
 const Product = () => {
+
   return (
     <section className="product-list">
+      
       {/* Header navigation links */}
       <nav className="header-navigation">
         <div className="links">
@@ -26,15 +29,18 @@ const Product = () => {
 
       {/* Products feed */}
       <ul>
-        <li><div class="product">
+
+        {Object.values(products)[0].map((product, index) => (
+          
+          <li key={index}><div className="product">
             {/* Head */}
             <div className="padding">
-              <Title subtitle="Air Jordan 1" title="Acclimate"/>
+              <Title subtitle={product.group} title={product.name} />
             </div>
 
             {/* Preview image */}
-            <Link to="/details">
-              <Image src="https://picsum.photos/500/500" alt="chaussure" className="preview" />
+            <Link to="/details/0">
+              <Image src={product.previewImages[0]} alt="Preview" className="preview" />
             </Link>
 
             {/* Actions */}
@@ -47,23 +53,8 @@ const Product = () => {
             </div>
           </div></li>
 
-          <li><div class="product">
-            <div className="padding">
-              <Title subtitle="Air Jordan 1" title="Acclimate"/>
-            </div>
+        ))}
 
-            <Link to="/details">
-              <Image src="https://picsum.photos/500/500" alt="chaussure" className="preview" />
-            </Link>
-
-            <div className="padding actions">
-              <div className="share">
-                <CTALikeButton />
-                <CTAShareButton />
-              </div>
-              <CTARemindingButton />
-            </div>
-          </div></li>
       </ul>
     </section>
   );
