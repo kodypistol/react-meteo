@@ -8,6 +8,7 @@ import CTALikeButton from 'components/CTALikeButton'
 import CTAShareButton from 'components/CTAShareButton'
 import CTARemindingButton from 'components/CTARemindingButton'
 import { Link } from 'react-router-dom';
+import StylingComponents from 'components/StylingComponents'
 
 import "./style.css";
 import products from "json/products.json";
@@ -38,6 +39,20 @@ const Product = () => {
               <Title subtitle={product.group} title={product.name} />
             </div>
 
+
+  return (
+    <div>
+      <Title subtitle="Air Jordan 1" title="Acclimate"/>
+      <Image src="" alt="chaussure" />
+      <CTALikeButton />
+      <CTAShareButton />
+      <CTARemindingButton />
+      <hr />
+      <Link to="/details"> Voir les détails</Link>
+
+      <StylingComponents />
+    </div>
+
             {/* Preview image */}
             <Link to="/details/0">
               <Image src={product.previewImages[0]} alt="Preview" className="preview" />
@@ -57,6 +72,7 @@ const Product = () => {
 
       </ul>
     </section>
+
   );
 };
 
