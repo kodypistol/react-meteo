@@ -1,28 +1,70 @@
-import React from 'react';
+import React, { useState } from 'react';
 import styles from './styles.module.css';
 import { Link } from 'react-router-dom';
 
 const Footer = () => {
 
+  const [homeClicked, setHomeClick] = useState(true);
+  const [discoverClicked, setDiscoverClick] = useState(false);
+  const [messagesClicked, setMessagesClick] = useState(false);
+  const [profileClicked, setProfileClick] = useState(false);
+
+
+  const setActiveItem = () => {
+    const activedItem = window.event.target;
+
+    if (activedItem.alt === "Home"){
+      setHomeClick(true);
+      setDiscoverClick(false);
+      setMessagesClick(false);
+      setProfileClick(false);
+
+    } else if(activedItem.alt === "Discover"){
+        setHomeClick(false);
+        setDiscoverClick(true);
+        setMessagesClick(false);
+        setProfileClick(false);
+
+    } else if (activedItem.alt === "Messages") {
+    setHomeClick(false);
+    setDiscoverClick(false);
+    setMessagesClick(true);
+    setProfileClick(false);
+
+  } else if (activedItem.alt === "Profile"){
+    setHomeClick(false);
+    setDiscoverClick(false);
+    setMessagesClick(false);
+    setProfileClick(true);
+  }
+}
   return(
 
     <div>
       <footer className={styles.footer}>
         <ul>
           <Link to="/" >
-            <li className={styles.homeIcon + ' ' + styles.itemsMargin}><img src="/assets/svg/home.svg" alt="Home"></img></li>
+            <li
+              className={styles.homeIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
+              <img src={!homeClicked ? "/assets/svg/homeInactive.svg" : "/assets/svg/homeActive.svg"} alt="Home"></img>
+            </li>
           </Link>
 
-          <Link to="/" >
-            <li className={styles.discoverIcon + ' ' + styles.itemsMargin}><img src="/assets/svg/discover.svg" alt="Discover"></img></li>
+          <Link to="/discover" >
+            <li className={styles.discoverIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
+              <img src={!discoverClicked ? "/assets/svg/discoverInactive.svg" : "/assets/svg/discoverActive.svg"} alt="Discover">
+              </img>
+            </li>
           </Link>
 
-          <Link to="/" >
-            <li className={styles.messagesIcon + ' ' + styles.itemsMargin}><img src="/assets/svg/messages.svg" alt="Messages"></img></li>
+          <Link to="/messages" >
+            <li className={styles.messagesIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
+            <img src={!messagesClicked ? "/assets/svg/messagesInactive.svg" : "/assets/svg/messagesActive.svg"} alt="Messages"></img></li>
           </Link>
 
-          <Link to="/" >
-            <li className={styles.profileIcon + ' ' + styles.itemsMargin}><img src="/assets/svg/profile.svg" alt="Profile"></img></li>
+          <Link to="/profile" >
+            <li className={styles.profileIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
+            <img src={!profileClicked ? "/assets/svg/profileInactive.svg" : "/assets/svg/profileActive.svg"} alt="Profile"></img></li>
           </Link>
         </ul>
       </footer>
