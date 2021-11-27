@@ -3,17 +3,11 @@ import "./style.css";
 
 import Image from "components/Image";
 
-function Slider (props) {
-    const imagesUrl = [
-        "https://picsum.photos/300/300",
-        "https://picsum.photos/500/300",
-        "https://picsum.photos/800/300"
-    ];
-    
+function Slider (props) {   
     const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
-
+    
     function next() {
-        if(currentImageIndex === imagesUrl.length - 1) {
+        if(currentImageIndex === props.images.length - 1) {
             setCurrentImageIndex(0);
         }
         else {
@@ -23,7 +17,7 @@ function Slider (props) {
 
     function back() {
         if(currentImageIndex === 0) {
-            setCurrentImageIndex(imagesUrl.length - 1);
+            setCurrentImageIndex(props.images.length - 1);
         }
         else {
             setCurrentImageIndex(currentImageIndex - 1);
@@ -51,7 +45,7 @@ function Slider (props) {
     return (
         <div className="slider">
             <ul className="image-list" onTouchStart={onTouchStart} onTouchEnd={onTouchEnd}>
-                {imagesUrl.map((image, index) => (
+                {props.images.map((image, index) => (
                     <li key={index}>
                         <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
                     </li>

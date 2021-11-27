@@ -13,8 +13,8 @@ function App() {
     <BrowserRouter>
     <Header />
       <Switch>
-        <Route exact path="/details">
-          <ProductDetails avaliableDate="09/12, 09:00" gender="Homme" minSize="35.5" maxSize="49.5" />
+        <Route exact path="/details/:productId">
+          <ProductDetails />
         </Route>
         <Route exact path="/">
           <Product />
