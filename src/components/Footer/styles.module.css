@@ -23,8 +23,9 @@ vertical-align: middle;
 
 }
 
+/* MVP2 : à styliser */
 .itemsMargin {
-  margin-right: 5%;
+
 }
 
 .homeIcon {
@@ -37,5 +38,5 @@ vertical-align: middle;
 }
 
 .profileIcon {
-  background-color: orange;
+
 }
