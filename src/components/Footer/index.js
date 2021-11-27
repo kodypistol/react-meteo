@@ -13,7 +13,7 @@ const Footer = () => {
 //Sachant bien que ce n'est probablement pas la façon la plus optimisée de faire,
 //c'est la logique que j'ai réussi à trouver. Je vérifie quel événement a déclenché
 //le click du bouton, puis je modifie son état en fonction du bouton cliqué, identifié
-//grâce à sa propriété alt.
+//grâce à sa propriété "alt".
 
   const setActiveItem = () => {
     const activedItem = window.event.target;
