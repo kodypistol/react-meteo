@@ -4,6 +4,7 @@ import './App.css';
 import Header from 'components/Header';
 import Product from 'components/Product';
 import Footer from 'components/Footer';
+import Search from "components/Search";
 import ScrollHider from 'components/ScrollHider';
 
 import ProductDetails from "components/ProductDetails";
@@ -17,6 +18,9 @@ function App() {
       <Switch>
         <Route exact path="/details/:productId">
           <ProductDetails />
+        </Route>
+        <Route exact path="/search">
+          <Search />
         </Route>
         <Route exact path="/">
           <Product />

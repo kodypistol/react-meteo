@@ -10,4 +10,12 @@
 .product-details .details .wear-details {
   margin-bottom: 28px;
 }
+
+.product-details .details .desc-image {
+  width: 100%;
+}
+
+.product-details .details .desc-image img {
+  width: 100%;
+}
 /*# sourceMappingURL=style.css.map */
