@@ -6,6 +6,7 @@ import './App.css';
 import Header from 'components/Header'
 import Product from 'components/Product';
 import Search from "components/Search";
+import Footer from 'components/Footer'
 import ProductDetails from "components/ProductDetails";
 
 function App() {
@@ -26,6 +27,7 @@ function App() {
           Erreur 404
         </Route>
       </Switch>
+    <Footer />
     </BrowserRouter>
   );
 }

@@ -8,7 +8,6 @@ import CTALikeButton from 'components/CTALikeButton'
 import CTAShareButton from 'components/CTAShareButton'
 import CTARemindingButton from 'components/CTARemindingButton'
 import { Link } from 'react-router-dom';
-import StylingComponents from 'components/StylingComponents'
 
 import "./style.css";
 import products from "json/products.json";
@@ -22,7 +21,7 @@ const Product = () => {
       <ul>
 
         {Object.values(products)[0].map((product, index) => (
-          
+
           <li key={index}><div className="product">
             {/* Head */}
             <div className="padding">
