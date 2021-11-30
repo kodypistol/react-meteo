@@ -47,7 +47,7 @@ const Footer = () => {
   return(
 
     <div>
-      <footer className={styles.footer}>
+      <footer className={styles.footer} id="footer">
         <ul>
           <Link to="/" >
             <li

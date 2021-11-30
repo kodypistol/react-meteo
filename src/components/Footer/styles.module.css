@@ -11,18 +11,30 @@ vertical-align: middle;
 
 .footer ul {
   display: flex;
-  justify-content: space-evenly;
+  justify-content: space-between;
   align-items: center;
   margin: 0;
   list-style-type: none;
-  padding: 18px 40px;
+  padding: 18px 40px
 }
 
 .footer ul li {
   display: inline;
-
 }
 
+.footer ul img {
+  width: 80%;
+  height: 80%;
+}
+
+.hide {
+  transform: translateY(200px);
+  transition: 0.5s;
+}
+
+.show {
+  transition: 0.5s;
+}
 /* MVP2 : à styliser */
 .itemsMargin {
 
