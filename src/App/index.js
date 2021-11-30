@@ -2,9 +2,10 @@
 
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
+
 import Header from 'components/Header'
 import Product from 'components/Product';
-
+import Search from "components/Search";
 import ProductDetails from "components/ProductDetails";
 
 function App() {
@@ -14,6 +15,9 @@ function App() {
       <Switch>
         <Route exact path="/details/:productId">
           <ProductDetails />
+        </Route>
+        <Route exact path="/search">
+          <Search />
         </Route>
         <Route exact path="/">
           <Product />

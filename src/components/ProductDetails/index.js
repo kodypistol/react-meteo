@@ -33,9 +33,9 @@ function ProductDetails (props) {
                 <p>{currentProduct.description}</p>
 
                 {currentProduct.previewImages.map((image, index) => (
-                    <li key={index}>
+                    <div key={index} className="desc-image">
                         <Image src={image} alt="Illustration" />
-                    </li>
+                    </div>
                 ))}
             </div>
         </section>
