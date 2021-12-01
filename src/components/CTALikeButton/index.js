@@ -17,10 +17,7 @@ const CTALikeButton = () => {
     activedItem.classList.remove(styles.animationOn);
     activedItem.classList.add(styles.animationOff);
   }
-
-
 }
-
   return(
     <button id={styles.like} onClick={() => toggleAnimation(isliked)}>
 
