@@ -24,9 +24,6 @@ function App() {
         </Route>
         <Route exact path="/">
           <Product />
-          <Product />
-          <Product />
-          <Product />
         </Route>
         <Route path="/">
           Erreur 404
