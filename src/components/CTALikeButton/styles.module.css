@@ -5,17 +5,17 @@
 
 .animationOn {
   animation-duration: 0.5s;
-  animation-name: animationToggle;
+  animation-name: animationOn;
 }
 
 .animationOff {
 
   animation-duration: 0.5s;
-  animation-name: animationToggle;
+  animation-name: animationOff;
 }
 
 
-@keyframes animationToggle {
+@keyframes animationOn {
   from {
     transform: scale(1, 1);
   }
@@ -26,4 +26,19 @@
   to {
     transform: scale(1, 1);
   }
+
+}
+
+@keyframes animationOff {
+  from {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+
 }

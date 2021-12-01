@@ -13,14 +13,13 @@ const CTALikeButton = () => {
     if (isliked === true){
     activedItem.classList.remove(styles.animationOff);
     activedItem.classList.add(styles.animationOn);
+
   } else {
     activedItem.classList.remove(styles.animationOn);
     activedItem.classList.add(styles.animationOff);
+
   }
-
-
 }
-
   return(
     <button id={styles.like} onClick={() => toggleAnimation(isliked)}>
 
