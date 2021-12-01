@@ -1,3 +1,7 @@
+.search input[type="text"] {
+  width: 60%;
+}
+
 .search-results ul {
   list-style: none;
   padding: 0;
