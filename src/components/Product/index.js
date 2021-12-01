@@ -18,7 +18,7 @@ function Product (props) {
             </div>
 
             {/* Preview image */}
-            <Link to="/details/0">
+            <Link to={"/details/" + props.index}>
               <Image src={props.product.previewImages[0]} alt="Preview" className="preview" />
             </Link>
 

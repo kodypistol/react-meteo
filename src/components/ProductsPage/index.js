@@ -10,7 +10,7 @@ const ProductsPage = () => {
       <ul>
         {Object.values(products)[0].map((product, index) => (
           <li key={index}>
-            <Product product={product} />
+            <Product product={product} index={index} />
           </li>
         ))}
       </ul>

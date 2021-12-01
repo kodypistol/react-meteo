@@ -16,7 +16,7 @@
                 "https://picsum.photos/300/300",
                 "https://picsum.photos/300/300"
             ],
-            "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.",
+            "description": "Adulée des joueurs et des amateurs de sneakers, la chaussure Air Jordan 11 Retro est confectionnée en cuir synthétique pour un confort optimal tout au long de la journée. Un cambrion en fibre de carbone offre une meilleure réactivité, tandis que l'unité Air Sole sur toute la longueur permet d'amortir votre foulée.",
             "descriptionImages": [
                 "https://picsum.photos/300/300",
                 "https://picsum.photos/300/300"
@@ -26,6 +26,33 @@
                 "jordan",
                 "11",
                 "femme"
+            ]
+        },
+
+        {
+            "id": "aefij42rag234aei",
+            "name": "White",
+            "group": "Kwondo1",
+            "available": true,
+            "availableDate": "29/11",
+            "gender": "Homme",
+            "minSize": "35.5",
+            "maxSize": "49.5",
+            "price": "179,99",
+            "previewImages": [
+                "https://picsum.photos/300/300",
+                "https://picsum.photos/300/300",
+                "https://picsum.photos/300/300"
+            ],
+            "description": "Prête pour la rue. Prête pour le tapis rouge. Prête pour la piste de danse. Tout droit sortie de l'imagination de G-Dragon, la Kwondo1 est conçue pour libérer un potentiel nouveau dans nos espaces préférés. Comment ? En exploitant notre liberté d'expression, notre créativité et notre audace sans limites. La Kwondo1, dont le nom est un mélange de « Kwon » et de « Just Do It », en référence à l'art martial traditionnel coréen du Tae-Kwon-do, représente une nouvelle toile vierge pour quiconque osera chausser cette toute nouvelle sneaker.",
+            "descriptionImages": [
+                "https://picsum.photos/300/300",
+                "https://picsum.photos/300/300"
+            ],
+            "tags": [
+                "kwondo",
+                "kwondo1",
+                "homme"
             ]
         }
 

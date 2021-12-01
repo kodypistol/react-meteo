@@ -13,7 +13,7 @@ import products from "json/products.json";
 function ProductDetails (props) {
     const { productId } = useParams();
     const currentProduct = products.products[productId];
-    
+
     return (
         <section className="product-details">
             <div className="actions">
