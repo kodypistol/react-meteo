@@ -2,7 +2,7 @@
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 import './App.css';
 import Header from 'components/Header';
-import Product from 'components/Product';
+import ProductsPage from 'components/ProductsPage';
 import Footer from 'components/Footer';
 import Search from "components/Search";
 import ScrollHider from 'components/ScrollHider';
@@ -10,7 +10,6 @@ import ScrollHider from 'components/ScrollHider';
 import ProductDetails from "components/ProductDetails";
 
 function App() {
-
 
   return (
     <BrowserRouter>
@@ -23,7 +22,7 @@ function App() {
           <Search />
         </Route>
         <Route exact path="/">
-          <Product />
+          <ProductsPage />
         </Route>
         <Route path="/">
           Erreur 404
@@ -32,9 +31,8 @@ function App() {
       <Footer />
       <ScrollHider />
     </BrowserRouter>
-
-
   );
+  
 }
 
 export default App;
