@@ -15,7 +15,7 @@ function ProductDetails (props) {
     const currentProduct = products.products[productId];
     
     return (
-        <section class="product-details">
+        <section className="product-details">
             <div className="actions">
                 <CloseButton/>
                 <RemindMeButton isActive={props.hasStock}/>
