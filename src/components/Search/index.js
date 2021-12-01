@@ -6,7 +6,7 @@ import "./style.css";
 import products from "json/products.json";
 
 function Search (props) {
-    const [startedTyping, setStartedTyping] = useState(false); 
+    const [startedTyping, setStartedTyping] = useState(false);
     const [request, setRequest] = useState(""); // A string entered by the user in input
     const [results, setResults] = useState([]); // Array of products index that match with request
 
@@ -34,7 +34,7 @@ function Search (props) {
                 var currentProduct = products.products[i]; // Current target of searching
 
                 // Check if name, description or tags match
-                if(currentProduct.name.toLowerCase().includes(request) 
+                if(currentProduct.name.toLowerCase().includes(request)
                 || currentProduct.group.toLowerCase().includes(request)
                 || currentProduct.description.toLowerCase().includes(request)
                 ||currentProduct.tags.includes(request))
@@ -42,7 +42,7 @@ function Search (props) {
                     tempResults.push(i);
                     break;
                 }
-                
+
             }
         }
 
@@ -52,40 +52,19 @@ function Search (props) {
         }
     }
 
-    // If user didnt type yet
-    if(startedTyping === false) {
-        return (
-            <section className="search">
-                <h3>Recherchez</h3>
-                <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
-                <button onClick={SendRequest}>Rechercher</button>
-    
-                <h3>Tapez ce que vous cherchez ci-dessus !</h3>
-            </section>
-        );
-    }
-    
-    // If there are results
-    if(results.length > 0) {
-        return (
-            <section className="search">
-                <h3>Recherchez</h3>
-                <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
-                <button onClick={SendRequest}>Rechercher</button>
-    
-                <h3>Résultats pour "{request}" :</h3>
-                <div className="search-results">
-                    <ul className="product-list">
-                        {results.map((result, index) => (
-                            <li key={index}>
-                                <Product product={products.products[result]} index={result} />
-                            </li>
-                        ))}
-                    </ul>
-                </div>
-            </section>
-        );
-    }
+    // // If user didnt type yet
+    // if(startedTyping === false) {
+    //     return (
+    //         <section className="search">
+    //             <h3>Recherchez</h3>
+    //             <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
+    //             <button onClick={SendRequest}>Rechercher</button>
+    //
+    //             <h3>Tapez ce que vous cherchez ci-dessus !</h3>
+    //         </section>
+    //     );
+    // }
+    //
 
     // If there is no results
     return (
@@ -93,8 +72,31 @@ function Search (props) {
             <h3>Recherchez</h3>
             <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
             <button onClick={SendRequest}>Rechercher</button>
+            {!startedTyping ? (
+              <h3>Tapez ce que vous cherchez ci-dessus !</h3>
+            ) : (
+              <>
+              {results.length > 0 ? (
+                <>
+                  <h3>Résultats pour "{request}" :</h3>
+                  <div className="search-results">
+                      <ul className="product-list">
+                          {results.map((result, index) => (
+                              <li key={index}>
+                                  <Product product={products.products[result]} index={result} />
+                              </li>
+                          ))}
+                      </ul>
+                  </div>
+                </>
+              ) : (
+                <h3>Aucun résultats</h3>
+              )}
+              </>
+            )}
 
-            <h3>Aucun résultats</h3>
+
+
         </section>
     );
 

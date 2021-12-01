@@ -4,24 +4,18 @@ import styles from "./styles.module.css";
 
 const CTALikeButton = () => {
   const [isliked, setLiked] = useState(false);
+  const [animation, startAnimation] = useState(false);
 
   const toggleAnimation = (isliked) => {
-
+    startAnimation(true)
     setLiked(!isliked)
-    const activedItem = window.event.target;
 
-    if (isliked === true){
-    activedItem.classList.remove(styles.animationOff);
-    activedItem.classList.add(styles.animationOn);
-
-  } else {
-    activedItem.classList.remove(styles.animationOn);
-    activedItem.classList.add(styles.animationOff);
-
-  }
+    setTimeout(() => {
+      startAnimation(false)
+    }, 500)
 }
   return(
-    <button id={styles.like} onClick={() => toggleAnimation(isliked)}>
+    <button id={styles.like} className={animation && styles.animation} onClick={() => toggleAnimation(isliked)}>
 
     <div>
       <span><img src={!isliked ? "/assets/svg/heart-outline-black.svg" : "/assets/svg/heart-all-red.svg"} alt="Like Button"></img></span>
