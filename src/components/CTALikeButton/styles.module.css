@@ -1,0 +1,29 @@
+#like {
+  background: none;
+  border: none;
+}
+
+.animationOn {
+  animation-duration: 0.5s;
+  animation-name: animationToggle;
+}
+
+.animationOff {
+
+  animation-duration: 0.5s;
+  animation-name: animationToggle;
+}
+
+
+@keyframes animationToggle {
+  from {
+    transform: scale(1, 1);
+  }
+  50% {
+    transform: scale(1.2, 1.2);
+  }
+
+  to {
+    transform: scale(1, 1);
+  }
+}
