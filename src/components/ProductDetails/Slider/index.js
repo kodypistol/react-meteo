@@ -4,6 +4,7 @@ import Image from "components/Image";
 import InputRange from "./InputRange";
 
 let isHolding = false;
+let downYScroll = 0;
 
 function Slider (props) {   
     const [currentImageIndex, setCurrentImageIndex] = React.useState([1]);
@@ -22,16 +23,13 @@ function Slider (props) {
     }
 
     function onMouseDown (event) {
-        console.log("onMouseDown");
-
         isHolding = true;
+        downYScroll = window.scrollY;
         event.preventDefault();
         return false;
     }
 
     function onMouseUp (event) {
-        console.log("onMouseUp");
-
         isHolding = false;
         event.preventDefault();
         return false;
@@ -47,12 +45,12 @@ function Slider (props) {
     }
 
     function onTouchMove (event) {
-        console.log("onTouchMove");
-
         let index = (event.targetTouches[0].clientX / window.screenX) * 36;
         index = Math.round(index);
         index = Math.min(Math.max(index, 1), 36);
         setCurrentImageIndex([index]);
+        
+        window.scroll(0, downYScroll); // Prevent scrolling while swiping
     }
 
     return (

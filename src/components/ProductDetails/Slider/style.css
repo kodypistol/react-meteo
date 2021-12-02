@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   min-width: 100vw;
-  overflow-x: scroll;
 }
 
 .slider img {
@@ -13,20 +12,5 @@
   -o-user-select: none;
   -ms-user-select: none;
       user-select: none;
-}
-
-.slider .pepe {
-  position: absolute;
-  color: white;
-}
-
-.slider .pepe::-moz-selection {
-  background-color: white;
-  color: white;
-}
-
-.slider .pepe::selection {
-  background-color: white;
-  color: white;
 }
 /*# sourceMappingURL=style.css.map */
