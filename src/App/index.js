@@ -6,12 +6,14 @@ import ProductsPage from 'components/ProductsPage';
 import Footer from 'components/Footer';
 import Search from "components/Search";
 import ScrollHider from 'components/ScrollHider';
+import { AppContextProvider } from "./AppContext";
 
 import ProductDetails from "components/ProductDetails";
 
 function App() {
 
   return (
+  <AppContextProvider>
     <BrowserRouter>
     <Header />
       <Switch>
@@ -31,8 +33,9 @@ function App() {
       <Footer />
       <ScrollHider />
     </BrowserRouter>
+    </AppContextProvider>
   );
-  
+
 }
 
 export default App;
