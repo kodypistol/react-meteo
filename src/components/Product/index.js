@@ -19,7 +19,7 @@ function Product (props) {
 
             {/* Preview image */}
             <Link to={"/details/" + props.index}>
-              <Image src={props.product.previewImages[0]} alt="Preview" className="preview" />
+              <Image src={props.product.descriptionImages[0]} alt="Preview" className="preview" />
             </Link>
 
             {/* Actions */}

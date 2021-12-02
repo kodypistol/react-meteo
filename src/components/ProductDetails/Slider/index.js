@@ -3,54 +3,43 @@ import "./style.css";
 import Image from "components/Image";
 import InputRange from "./InputRange";
 
+let isHolding = false;
+
 function Slider (props) {   
-    const [currentImageIndex, setCurrentImageIndex] = React.useState(0);
+    const [currentImageIndex, setCurrentImageIndex] = React.useState([1]);
 
-    const next = () => {
-        if(currentImageIndex === props.images.length - 1) {
-            setCurrentImageIndex(0);
+    function GetUrl (currentIndex) {
+        // Get base url
+        let url = props.baseUrl;
+
+        // Replace index
+        let currentIndexStr = currentIndex.toString();
+        if(currentIndex <= 9) {
+            currentIndexStr = "0" + currentIndexStr;
         }
-        else {
-            setCurrentImageIndex(currentImageIndex + 1);
-        }
+        url = url.replace(":index:", currentIndexStr);
+        return url;
     }
 
-    const back = () => {
-        if(currentImageIndex === 0) {
-            setCurrentImageIndex(props.images.length - 1);
+    function onMouseMove (event) {
+        if(isHolding) {
+            let index = (event.clientX / window.screenX) * 36;
+            index = Math.round(index);
+            index = Math.min(Math.max(index, 1), 36);
+            setCurrentImageIndex([index]);
         }
-        else {
-            setCurrentImageIndex(currentImageIndex - 1);
-        }
-    }
-
-    let lastValue = 0;
-
-
-    const onSliderChange = (value) => {
-        console.log("onSliderChange : ", value);
-
-        if(value > lastValue) {
-            // next();
-        }
-        else if (value < lastValue) {
-            // back();
-        }
-
-        lastValue = value;
     }
 
     return (
-        <div className="slider">
-            <ul className="image-list">
-                {props.images.map((image, index) => (
-                    <li key={index}>
-                        <Image src={image} alt="Slider component" className={index === currentImageIndex ? "active" : "unactive"} />
-                    </li>
-                ))}
-            </ul>
+        <div className="slider" onMouseMove={onMouseMove}
+                                onMouseDown={() => (isHolding = true)}
+                                onMouseUp={() => (isHolding = false)}
+                                onTouchStart={() => (isHolding = true)}
+                                onTouchEnd={() => (isHolding = false)}>
 
-            <InputRange onChange={onSliderChange} />
+            <Image src={GetUrl(currentImageIndex)} alt={"Slider component " + currentImageIndex} />
+            <InputRange onChange={setCurrentImageIndex} values={currentImageIndex} />
+            <span className="pepe">Par pepe la best</span>
         </div>
     );
 }

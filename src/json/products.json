@@ -11,11 +11,7 @@
             "minSize": "35.5",
             "maxSize": "45.5",
             "price": "189,99",
-            "previewImages": [
-                "https://picsum.photos/300/300",
-                "https://picsum.photos/300/200",
-                "https://picsum.photos/300/250"
-            ],
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Dunk-Low-Retro-White-Black-2021/Images/Nike-Dunk-Low-Retro-White-Black-2021/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1633027409&h=320&fm=webp",
             "description": "Adulée des joueurs et des amateurs de sneakers, la chaussure Air Jordan 11 Retro est confectionnée en cuir synthétique pour un confort optimal tout au long de la journée. Un cambrion en fibre de carbone offre une meilleure réactivité, tandis que l'unité Air Sole sur toute la longueur permet d'amortir votre foulée.",
             "descriptionImages": [
                 "https://picsum.photos/300/300",

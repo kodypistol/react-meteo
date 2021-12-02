@@ -4,7 +4,6 @@ import products from "json/products.json";
 import Product from "components/Product";
 
 const ProductsPage = () => {
-
   return (
     <section className="product-list">
       <ul>
