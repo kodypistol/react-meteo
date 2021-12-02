@@ -1,18 +1,12 @@
 import React, { useState } from 'react';
+import products from 'json/products.json';
 
 const AppContext = React.createContext([{}, () => {}]);
 
 const AppContextProvider = (props) => {
-  const [state, setState] = useState({
-    tracks: [
-      {
-        productId: '',
-        liked: false,
-      }
-    ],
-  });
+  const [productsIdLiked, setProductsIdLiked] = useState([]);
   return (
-    <AppContext.Provider value={[state, setState]}>
+    <AppContext.Provider value={{productsIdLiked, setProductsIdLiked}}>
       {props.children}
     </AppContext.Provider>
   );
