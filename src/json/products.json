@@ -2,56 +2,140 @@
     "products": [
 
         {
-            "id": "afed1342ha22pc",
-            "name": "Black and white",
-            "group": "Air Jordan 11",
-            "available": true,
-            "availableDate": "29/11",
-            "gender": "Femme",
-            "minSize": "35.5",
-            "maxSize": "45.5",
-            "price": "189,99",
-            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Dunk-Low-Retro-White-Black-2021/Images/Nike-Dunk-Low-Retro-White-Black-2021/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1633027409&h=320&fm=webp",
-            "description": "Adulée des joueurs et des amateurs de sneakers, la chaussure Air Jordan 11 Retro est confectionnée en cuir synthétique pour un confort optimal tout au long de la journée. Un cambrion en fibre de carbone offre une meilleure réactivité, tandis que l'unité Air Sole sur toute la longueur permet d'amortir votre foulée.",
-            "descriptionImages": [
-                "https://picsum.photos/300/300",
-                "https://picsum.photos/300/300"
-            ],
-            "tags": [
-                "air jordan",
-                "jordan",
-                "11",
-                "femme"
-            ]
-        },
-
-        {
-            "id": "aefij42rag234aei",
-            "name": "White",
-            "group": "Kwondo1",
+            "id": "8552a6c7-ced7-4585-978a-e1ae89a4bf23",
+            "name": "Retro White Black (2021)",
+            "group": "Nike Dunk Low",
             "available": true,
             "availableDate": "29/11",
             "gender": "Homme",
             "minSize": "35.5",
-            "maxSize": "49.5",
-            "price": "179,99",
-            "previewImages": [
-                "https://picsum.photos/300/300",
-                "https://picsum.photos/300/300",
-                "https://picsum.photos/300/300"
-            ],
-            "description": "Prête pour la rue. Prête pour le tapis rouge. Prête pour la piste de danse. Tout droit sortie de l'imagination de G-Dragon, la Kwondo1 est conçue pour libérer un potentiel nouveau dans nos espaces préférés. Comment ? En exploitant notre liberté d'expression, notre créativité et notre audace sans limites. La Kwondo1, dont le nom est un mélange de « Kwon » et de « Just Do It », en référence à l'art martial traditionnel coréen du Tae-Kwon-do, représente une nouvelle toile vierge pour quiconque osera chausser cette toute nouvelle sneaker.",
+            "maxSize": "45.5",
+            "price": "229,99",
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Dunk-Low-Retro-White-Black-2021/Images/Nike-Dunk-Low-Retro-White-Black-2021/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1633027409&h=320&fm=webp",
+            "description": "Du programme Nike College Colors (pour arborer les couleurs des équipes universitaires) à l'éclatante collection Nike CO.JP, bien des coloris sont sortis depuis 1985, date de création de la Dunk. Mais le contraste de couleurs fait la spécificité de la Dunk, quelle que soit la version. Nike reprend l'effet color block intemporel sur la Nike Dunk Low Retro White Black.",
             "descriptionImages": [
-                "https://picsum.photos/300/300",
-                "https://picsum.photos/300/300"
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/8ccabb9a-415c-4477-91a5-7d7be210865a/chaussure-dunk-low-pour-plus-age-j3ZLkD.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/97aafe3f-3109-4bc2-8d9d-4192b7ecee70/chaussure-dunk-low-pour-plus-age-j3ZLkD.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/a2b6c116-2a3e-4521-a3ed-b99be392124c/chaussure-dunk-low-pour-plus-age-j3ZLkD.png"
             ],
             "tags": [
-                "kwondo",
-                "kwondo1",
-                "homme"
+                "dunk low",
+                "black white",
+                "black",
+                "white",
+                "retro",
+                "2021"
+            ]
+        },
+
+        {
+            "id": "afb45b26-c30b-4eca-aa97-58e4d69f68f3",
+            "name": "Black White",
+            "group": "Nike Air Max 97",
+            "available": true,
+            "availableDate": "29/11",
+            "gender": "Homme",
+            "minSize": "35.5",
+            "maxSize": "45.5",
+            "price": "142,99",
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Air-Max-97-Black-White/Images/Nike-Air-Max-97-Black-White/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1607664123&h=320&fm=webp",
+            "description": "Revisitant le style ondulé du modèle d'origine inspiré des trains à grande vitesse japonais, la Nike Air Max 97 affiche un style fulgurant qui en met plein la vue.Elle reprend l'unité Nike Air révolutionnaire sur toute la longueur qui a bousculé le monde du running, et ajoute des détails tendance pour vous permettre d'évoluer dans le plus grand confort.",
+            "descriptionImages": [
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ngzqrjuoaghukvmgdn3d/chaussure-air-max-97-pour-nsRddC.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/kyjosqxnxtcmy9dhjazm/chaussure-air-max-97-pour-nsRddC.png",
+                "https://static.nike.com/a/images/t_PDP_864_v1/f_auto,b_rgb:f5f5f5/ngzqrjuoaghukvmgdn3d/chaussure-air-max-97-pour-nsRddC.png"
+            ],
+            "tags": [
+                "air max",
+                "air max 97",
+                "back",
+                "white",
+                "black white"
+            ]
+        },
+
+        {
+            "id": "61373844-d437-4e7f-a194-fde894f5adae",
+            "name": "Travis Scott Sail",
+            "group": "Nike Air Force 1 Low",
+            "available": true,
+            "availableDate": "29/11",
+            "gender": "Homme",
+            "minSize": "35.5",
+            "maxSize": "45.5",
+            "price": "1270,99",
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Air-Force-1-Low-Travis-Scott-Sail/Images/Nike-Air-Force-1-Low-Travis-Scott-Sail/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1606324745&h=320&fm=webp",
+            "description": "Revisitant le style ondulé du modèle d'origine inspiré des trains à grande vitesse japonais, la Nike Air Max 97 affiche un style fulgurant qui en met plein la vue.Elle reprend l'unité Nike Air révolutionnaire sur toute la longueur qui a bousculé le monde du running, et ajoute des détails tendance pour vous permettre d'évoluer dans le plus grand confort.",
+            "descriptionImages": [
+                "https://images.stockx.com/360/Nike-Air-Force-1-Low-Travis-Scott-Sail/Images/Nike-Air-Force-1-Low-Travis-Scott-Sail/Lv2/img07.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1606324745&h=320&fm=webp",
+                "https://images.stockx.com/360/Nike-Air-Force-1-Low-Travis-Scott-Sail/Images/Nike-Air-Force-1-Low-Travis-Scott-Sail/Lv2/img17.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1606324745&h=320&fm=webp"
+            ],
+            "tags": [
+                "air force",
+                "air force 1",
+                "air force 1 low",
+                "sail",
+                "white",
+                "travis",
+                "travis scott",
+                "travis scott sail"
+            ]
+        },
+
+        {
+            "id": "c4912a24-376f-483e-a7c2-3f9ca187c9d7",
+            "name": "Patta Waves Noise Aqua (with Bracelet)",
+            "group": "Nike Air Max 1",
+            "available": true,
+            "availableDate": "29/11",
+            "gender": "Homme",
+            "minSize": "35.5",
+            "maxSize": "45.5",
+            "price": "207,99",
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Images/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1635780405&h=320&fm=webp",
+            "description": "Conçue en collaboration avec Patta, la Nike Air Max 1 Patta Waves Noise Aqua (avec bracelet) possède une empeigne en mesh gris parsemée de renforts blancs. Les Swoosh et le garde-boue en forme de vaguelette apportent une note de couleur turquoise. Le logo Nike classique au talon rend hommage à la gamme Air Max 1 d'origine. La semelle intermédiaire blanche, la semelle extérieure multicolore et l'étiquette Patta cousue sur la languette viennent parachever ce modèle.",
+            "descriptionImages": [
+                "https://images.stockx.com/360/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Images/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Lv2/img22.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1635780405&h=320&fm=webp",
+                "https://images.stockx.com/360/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Images/Nike-Air-Max-1-Patta-Waves-Noise-Aqua-with-Bracelet/Lv2/img34.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1635780405&h=320&fm=webp"
+            ],
+            "tags": [
+                "air max",
+                "air max 1",
+                "patta",
+                "patta waves",
+                "patta waves noise",
+                "patta waves aqua",
+                "bracelet"
+            ]
+        },
+
+        {
+            "id": "a6db270a-da82-4472-adfa-e351e311bf8d",
+            "name": "Off-White Lot 50",
+            "group": "Nike Dunk Low",
+            "available": true,
+            "availableDate": "29/11",
+            "gender": "Homme",
+            "minSize": "35.5",
+            "maxSize": "45.5",
+            "price": "830,99",
+            "baseSliderImageUrl": "https://images.stockx.com/360/Nike-Dunk-Low-Off-White-Lot-50/Images/Nike-Dunk-Low-Off-White-Lot-50/Lv2/img:index:.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1630350033&h=320&fm=webp",
+            "description": "Conçue en collaboration avec Patta, la Nike Air Max 1 Patta Waves Noise Aqua (avec bracelet) possède une empeigne en mesh gris parsemée de renforts blancs. Les Swoosh et le garde-boue en forme de vaguelette apportent une note de couleur turquoise. Le logo Nike classique au talon rend hommage à la gamme Air Max 1 d'origine. La semelle intermédiaire blanche, la semelle extérieure multicolore et l'étiquette Patta cousue sur la languette viennent parachever ce modèle.",
+            "descriptionImages": [
+                "https://images.stockx.com/360/Nike-Dunk-Low-Off-White-Lot-50/Images/Nike-Dunk-Low-Off-White-Lot-50/Lv2/img17.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1630350033&h=320&fm=webp",
+                "https://images.stockx.com/360/Nike-Dunk-Low-Off-White-Lot-50/Images/Nike-Dunk-Low-Off-White-Lot-50/Lv2/img01.jpg?auto=compress&w=480&q=90&dpr=2&updated_at=1630350033&h=320&fm=webp"
+            ],
+            "tags": [
+                "off-white",
+                "off white",
+                "lot 50",
+                "off-white lot 50",
+                "dunk low",
+                "dunk",
+                "low",
+                "50"
             ]
         }
-
 
     ]
 }

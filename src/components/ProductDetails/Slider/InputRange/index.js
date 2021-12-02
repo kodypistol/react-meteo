@@ -18,7 +18,7 @@ function InputRange (props) {
                 ...props.style,
                 height: '6px',
                 width: '100%',
-                backgroundColor: '#ccc'
+                backgroundColor: 'transparent'
                 }}
             >
                 {children}

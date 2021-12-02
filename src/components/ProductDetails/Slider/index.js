@@ -65,7 +65,6 @@ function Slider (props) {
 
             <Image src={GetUrl(currentImageIndex)} alt={"Slider component " + currentImageIndex} />
             <InputRange onChange={setCurrentImageIndex} values={currentImageIndex} />
-            <span className="pepe">Par pepe la best</span>
         </div>
     );
 }
