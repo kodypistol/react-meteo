@@ -6,7 +6,7 @@ import ProductsPage from 'components/ProductsPage';
 import Footer from 'components/Footer';
 import Search from "components/Search";
 import ScrollHider from 'components/ScrollHider';
-import { AppContextProvider } from "./AppContext";
+import { AppContextProvider } from "components/AppContext/AppContext.js";
 
 import ProductDetails from "components/ProductDetails";
 
