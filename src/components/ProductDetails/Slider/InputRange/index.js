@@ -31,7 +31,7 @@ function InputRange (props) {
                 ...props.style,
                 height: '12px',
                 width: '12px',
-                backgroundColor: '#999',
+                backgroundColor: 'transparent',
                 borderRadius: '1000px'
                 }}
             />

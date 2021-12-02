@@ -30,12 +30,18 @@ function Slider (props) {
         }
     }
 
+    function onTouchMove (event) {
+        let index = (event.targetTouches[0].clientX / window.screenX) * 36;
+        index = Math.round(index);
+        index = Math.min(Math.max(index, 1), 36);
+        setCurrentImageIndex([index]);
+    }
+
     return (
         <div className="slider" onMouseMove={onMouseMove}
                                 onMouseDown={() => (isHolding = true)}
                                 onMouseUp={() => (isHolding = false)}
-                                onTouchStart={() => (isHolding = true)}
-                                onTouchEnd={() => (isHolding = false)}>
+                                onTouchMove={onTouchMove}>
 
             <Image src={GetUrl(currentImageIndex)} alt={"Slider component " + currentImageIndex} />
             <InputRange onChange={setCurrentImageIndex} values={currentImageIndex} />
