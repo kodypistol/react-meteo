@@ -23,7 +23,7 @@ function ProductDetails (props) {
                 <RemindMeButton isActive={props.hasStock}/>
             </div>
 
-            <Slider images={currentProduct.previewImages} />
+            <Slider baseUrl={currentProduct.baseSliderImageUrl} />
 
             <div className="details">
                 <Title subtitle={currentProduct.group} title={currentProduct.name} price={currentProduct.price} />
@@ -37,7 +37,7 @@ function ProductDetails (props) {
                 <CTALikeButton />
                 <CTAShareButton />
 
-                {currentProduct.previewImages.map((image, index) => (
+                {currentProduct.descriptionImages.map((image, index) => (
                     <div key={index} className="desc-image">
                         <Image src={image} alt="Illustration" />
                     </div>
