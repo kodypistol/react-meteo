@@ -21,6 +21,22 @@ function Slider (props) {
         return url;
     }
 
+    function onMouseDown (event) {
+        console.log("onMouseDown");
+
+        isHolding = true;
+        event.preventDefault();
+        return false;
+    }
+
+    function onMouseUp (event) {
+        console.log("onMouseUp");
+
+        isHolding = false;
+        event.preventDefault();
+        return false;
+    }
+
     function onMouseMove (event) {
         if(isHolding) {
             let index = (event.clientX / window.screenX) * 36;
@@ -31,6 +47,8 @@ function Slider (props) {
     }
 
     function onTouchMove (event) {
+        console.log("onTouchMove");
+
         let index = (event.targetTouches[0].clientX / window.screenX) * 36;
         index = Math.round(index);
         index = Math.min(Math.max(index, 1), 36);
@@ -39,8 +57,10 @@ function Slider (props) {
 
     return (
         <div className="slider" onMouseMove={onMouseMove}
-                                onMouseDown={() => (isHolding = true)}
-                                onMouseUp={() => (isHolding = false)}
+                                onMouseDown={onMouseDown}
+                                onMouseUp={onMouseUp}
+                                onTouchStart={onMouseDown}
+                                onTouchEnd={onMouseUp}
                                 onTouchMove={onTouchMove}>
 
             <Image src={GetUrl(currentImageIndex)} alt={"Slider component " + currentImageIndex} />
