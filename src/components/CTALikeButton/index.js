@@ -1,9 +1,9 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import styles from "./styles.module.css";
-
+import { AppContext } from "../AppContext/AppContext.js";
 
 const CTALikeButton = () => {
-  const [isliked, setLiked] = useState(false);
+  const [isliked, setLiked] = useContext(AppContext);
   const [animation, startAnimation] = useState(false);
 
   const toggleAnimation = (isliked) => {
