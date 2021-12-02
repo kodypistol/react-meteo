@@ -1,4 +1,4 @@
-.header-navigation {
+.header .header-navigation {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -10,7 +10,8 @@
           align-items: center;
 }
 
-.header-navigation .search-btn {
+.header .header-navigation .search-btn {
+  display: block;
   height: 100%;
   padding: 0;
   border: none;
@@ -18,24 +19,87 @@
   background-color: black;
 }
 
-.header-navigation .links {
+.header .header-navigation .search-btn svg {
+  display: block;
+  height: 100%;
+  padding: 15px;
+}
+
+.header .header-navigation .links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   padding: 15px 15.92px;
 }
 
-.header-navigation .links a {
+.header .header-navigation .links a {
   font-weight: bold;
   text-decoration: none;
   color: #757575;
 }
 
-.header-navigation .links a.active {
+.header .header-navigation .links a.active {
   color: black;
 }
 
-.header-navigation .links a:not(:last-child) {
+.header .header-navigation .links a:not(:last-child) {
   margin-right: 20px;
+}
+
+.header .search {
+  z-index: 2000;
+  background-color: white;
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 100vw;
+  -webkit-transition: left 0.5s;
+  transition: left 0.5s;
+}
+
+.header .search.active {
+  left: 0;
+}
+
+.header .search .head {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  padding: 15px 15px 15px 15px;
+  border-bottom: 0.6px solid grey;
+}
+
+.header .search .head input {
+  width: 75%;
+  padding: 5px 0;
+  border: none;
+  background-color: transparent;
+}
+
+.header .search .head button {
+  border: none;
+  background-color: transparent;
+  cursor: pointer;
+}
+
+.header .search .head button svg {
+  cursor: pointer;
+}
+
+.header .search .search-title {
+  padding: 10px 20px;
+  margin: 20px 0;
+}
+
+.header .search ul {
+  list-style: none;
+  padding: 0;
 }
 /*# sourceMappingURL=style.css.map */

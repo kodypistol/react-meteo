@@ -4,7 +4,6 @@ import './App.css';
 import Header from 'components/Header';
 import ProductsPage from 'components/ProductsPage';
 import Footer from 'components/Footer';
-import Search from "components/Search";
 import ScrollHider from 'components/ScrollHider';
 import { AppContextProvider } from "components/AppContext/AppContext.js";
 
@@ -19,9 +18,6 @@ function App() {
       <Switch>
         <Route exact path="/details/:productId">
           <ProductDetails />
-        </Route>
-        <Route exact path="/search">
-          <Search />
         </Route>
         <Route exact path="/">
           <ProductsPage />

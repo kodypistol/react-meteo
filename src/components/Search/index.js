@@ -81,9 +81,6 @@ function Search (props) {
                 )}
                 </>
             )}
-
-
-
         </section>
     );
 
