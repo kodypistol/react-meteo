@@ -1,0 +1,13 @@
+.remindingButton {
+  background-color: black;
+  border-radius: 150px;
+  border: none;
+  color: white;
+  padding: 10px 12px;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: medium;
+}
+
+
+/*# sourceMappingURL=style.css.map */
