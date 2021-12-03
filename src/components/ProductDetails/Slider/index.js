@@ -8,7 +8,6 @@ import InputRange from "./InputRange";
 
 function Slider (props) {   
     const [currentImageIndex, setCurrentImageIndex] = React.useState([1]);
-    console.log("Render slider");
     
     function GetUrl (currentIndex) {
         // Get base url
@@ -26,11 +25,11 @@ function Slider (props) {
     // With use-gesture package
     const onDrag = useDrag( ({values: [x, y]}) => {
         let index = (x / window.screenX) * 36;
+        console.log("Dragging at ", x, " with index ", index);
+        
         index = Math.round(index);
         index = Math.min(Math.max(index, 1), 36);
         setCurrentImageIndex([index]);
-
-        console.log("Dragging at ", x, " with index ", index);
     })
 
     return (
