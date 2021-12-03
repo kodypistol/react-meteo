@@ -28,6 +28,8 @@ function Slider (props) {
         index = Math.round(index);
         index = Math.min(Math.max(index, 1), 36);
         setCurrentImageIndex([index]);
+
+        console.log("Dragging !");
     })
 
     return (
