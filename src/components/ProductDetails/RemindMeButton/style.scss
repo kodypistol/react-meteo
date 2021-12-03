@@ -15,8 +15,9 @@
     align-items: center;
 
     &:not(.active) {
-        background-color: #CCCCCC;
-        color: black;
-        cursor: not-allowed;
+        transition: 0.2s;
+        background-color: #64BE71;
+        color: white;
+        border: none;
     }
 }

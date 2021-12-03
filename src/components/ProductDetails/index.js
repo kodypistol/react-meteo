@@ -26,7 +26,7 @@ function ProductDetails (props) {
             <Slider baseUrl={currentProduct.baseSliderImageUrl} />
 
             <div className="details">
-                <Title subtitle={currentProduct.group} title={currentProduct.name} price={currentProduct.price} />
+                <Title subtitle={currentProduct.group} title={currentProduct.name} price={currentProduct.price + " €"} />
                 <p className="wear-details">
                     <strong>Disponible {currentProduct.avaliableDate}</strong><br/>
                     {currentProduct.gender} {currentProduct.minSize} - {currentProduct.maxSize}

@@ -1,5 +1,4 @@
 .remind-btn {
-  border: none;
   background-color: black;
   border-radius: 1000px;
   position: fixed;
@@ -23,10 +22,10 @@
 }
 
 .remind-btn:not(.active) {
+  -webkit-transition: 0.2s;
   transition: 0.2s;
   background-color: #64BE71;
   color: white;
   border: none;
 }
-
 /*# sourceMappingURL=style.css.map */
