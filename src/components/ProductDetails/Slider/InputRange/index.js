@@ -16,9 +16,11 @@ function InputRange (props) {
                 {...props}
                 style={{
                 ...props.style,
-                height: '6px',
-                width: '100%',
-                backgroundColor: 'transparent'
+                height: '4px',
+                width: '80%',
+                margin: '0 auto',
+                backgroundColor: '#e5e5e5',
+                borderRadius: '1000px'
                 }}
             >
                 {children}
@@ -31,7 +33,7 @@ function InputRange (props) {
                 ...props.style,
                 height: '12px',
                 width: '12px',
-                backgroundColor: 'transparent',
+                backgroundColor: '#d3d3d3',
                 borderRadius: '1000px'
                 }}
             />
