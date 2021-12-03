@@ -24,9 +24,9 @@ function Slider (props) {
 
     // With use-gesture package
     const onDrag = useDrag( ({values: [x, y]}) => {
-        let index = (x / window.screenX) * 36;
-        console.log("Dragging at ", x, " with index ", index);
-        
+        let index = (x / window.innerWidth) * 36;
+        console.log("Dragging", "with index ", index, " of ", window.innerWidth);
+
         index = Math.round(index);
         index = Math.min(Math.max(index, 1), 36);
         setCurrentImageIndex([index]);
