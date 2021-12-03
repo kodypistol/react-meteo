@@ -24,13 +24,13 @@ function App() {
           <ProductsPage />
         </Route>
         <Route exact path="/explore">
-          <SoonPage />
+          <SoonPage sectionName="Explorer" />
         </Route>
         <Route exact path="/messages">
-          <SoonPage />
+          <SoonPage sectionName="Boite de réception" />
         </Route>
         <Route exact path="/account">
-          <SoonPage />
+          <SoonPage sectionName="Profil" />
         </Route>
         <Route path="/">
           Erreur 404

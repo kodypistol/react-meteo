@@ -65,14 +65,14 @@ const Header = () => {
           <Link to="/">A venir</Link>
         </div>
         <button className="search-btn" onClick={toggleSearchPanel}>
-          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#ffffff" stroke-width="2"/></svg>
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#ffffff" strokeWidth="2"/></svg>
         </button>
       </nav>
 
       {/* Search section */}
       <div className={searchIsOpen ? "search active" : "search"}>
         <div className="head">
-          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#111111" stroke-width="2"/></svg>
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#111111" strokeWidth="2"/></svg>
           <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
           <button onClick={toggleSearchPanel}>Annuler</button>
         </div>
