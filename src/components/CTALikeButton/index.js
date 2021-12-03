@@ -25,11 +25,9 @@ const CTALikeButton = ({id}) => {
       console.log("Avant setProduct : ", productsIdLiked);
       setProductsIdLiked([...productsIdLiked, id]);
       console.log("Après setProduct : ", productsIdLiked);
-
     }
 
     //Si produit dans tableau, je supprime
-    // genre mettre filter et si l'id est différent de l'id que je cherche alors renvoie tout le tableau sans l'id
     //  productsIdLiked.splice(pos, 1);
 
     // setLiked(state => ({ ...state, productId: index, liked: !isliked }));
@@ -37,6 +35,7 @@ const CTALikeButton = ({id}) => {
     setTimeout(() => {
       startAnimation(false)
     }, 500)
+
 
 }
   return(
