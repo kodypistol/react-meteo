@@ -1,13 +1,17 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from 'react-router-dom';
 
 import "./style.css"
 
 const RemindMeButton = (props) => {
-
-
+  const [buttonClass, setButtonClass] = useState(false)
+  const toggleButton = () => {
+      setButtonClass(!buttonClass);
+  }
     return (
-        <Link to="/" className="active remind-btn">{props.text ? props.text : "Me prévenir"}</Link>
+        <button className={buttonClass ? "unactive remind-btn" : "active remind-btn"} onClick={toggleButton}>{
+          props.text ? props.text : "Me prévenir"}
+          </button>
     );
 
 }

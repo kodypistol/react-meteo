@@ -9,5 +9,9 @@
   font-weight: medium;
 }
 
+.remindingButton img {
+  pointer-events: none;
+}
+
 
 /*# sourceMappingURL=style.css.map */
