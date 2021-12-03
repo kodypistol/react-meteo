@@ -6,6 +6,7 @@
   left: 50%;
   -webkit-transform: translateX(-50%);
           transform: translateX(-50%);
+  border: none;
   color: white;
   width: calc(100vw - (15.92px * 2));
   height: 55px;
@@ -19,6 +20,7 @@
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  cursor: pointer;
 }
 
 .remind-btn:not(.active) {

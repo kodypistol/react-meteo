@@ -5,6 +5,7 @@
     bottom: 50px;
     left: 50%;
     transform: translateX(-50%);
+    border: none;
 
     color: white;
     width: calc(100vw - (15.92px * 2));
@@ -13,7 +14,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-
+    cursor: pointer;
+    
     &:not(.active) {
         transition: 0.2s;
         background-color: #64BE71;
