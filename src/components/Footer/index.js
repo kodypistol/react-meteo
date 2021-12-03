@@ -56,7 +56,7 @@ const Footer = () => {
             </li>
           </Link>
 
-          <Link to="/discover" >
+          <Link to="/explore" >
             <li className={styles.discoverIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
               <img src={!discoverClicked ? "/assets/svg/discoverInactive.svg" : "/assets/svg/discoverActive.svg"} alt="Discover">
               </img>
@@ -68,7 +68,7 @@ const Footer = () => {
             <img src={!messagesClicked ? "/assets/svg/messagesInactive.svg" : "/assets/svg/messagesActive.svg"} alt="Messages"></img></li>
           </Link>
 
-          <Link to="/profile" >
+          <Link to="/account" >
             <li className={styles.profileIcon + ' ' + styles.itemsMargin} onClick={setActiveItem}>
             <img src={!profileClicked ? "/assets/svg/profileInactive.svg" : "/assets/svg/profileActive.svg"} alt="Profile"></img></li>
           </Link>

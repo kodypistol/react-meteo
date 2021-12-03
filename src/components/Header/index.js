@@ -2,7 +2,6 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import "./style.css";
 
-import Product from "components/Product";
 import SearchResult from "components/SearchResult";
 import products from "json/products.json";
 
@@ -36,9 +35,9 @@ const Header = () => {
           products.products.map((product, index) => {
 
               // Check if name, description or tags match
-              if(product.name.toLowerCase().includes(request) ||
-              product.group.toLowerCase().includes(request) ||
-              product.tags.filter(tag => (tag.toLowerCase().includes(request))).length > 0)
+              if(product.name.toLowerCase().includes(request.toLowerCase()) ||
+              product.group.toLowerCase().includes(request.toLowerCase()) ||
+              product.tags.filter(tag => (tag.toLowerCase().includes(request.toLowerCase()))).length > 0)
               {
                   tempResults.push(index);
               }
@@ -66,14 +65,14 @@ const Header = () => {
           <Link to="/">A venir</Link>
         </div>
         <button className="search-btn" onClick={toggleSearchPanel}>
-          <svg fill="#ffffff" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="25px" height="25px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#ffffff" stroke-width="2"/></svg>
         </button>
       </nav>
 
       {/* Search section */}
       <div className={searchIsOpen ? "search active" : "search"}>
         <div className="head">
-          <svg fill="#000000" xmlns="http://www.w3.org/2000/svg"  viewBox="0 0 50 50" width="20px" height="20px"><path d="M 21 3 C 11.601563 3 4 10.601563 4 20 C 4 29.398438 11.601563 37 21 37 C 24.355469 37 27.460938 36.015625 30.09375 34.34375 L 42.375 46.625 L 46.625 42.375 L 34.5 30.28125 C 36.679688 27.421875 38 23.878906 38 20 C 38 10.601563 30.398438 3 21 3 Z M 21 7 C 28.199219 7 34 12.800781 34 20 C 34 27.199219 28.199219 33 21 33 C 13.800781 33 8 27.199219 8 20 C 8 12.800781 13.800781 7 21 7 Z"/></svg>
+          <svg width="20" height="19" viewBox="0 0 20 19" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M18.9819 18.266L15.3178 14.4813C14.707 13.8503 14.5915 12.8966 14.8633 12.0615C16.0978 8.26828 15.8586 1.47754 8.92227 1.47754C4.62502 1.47754 1.95891 4.85167 1.95891 8.35109C1.95891 10.993 3.61085 15.1413 9.15016 15.1413C10.0903 15.1413 11.2771 14.8843 12.4163 14.2244" stroke="#111111" stroke-width="2"/></svg>
           <input type="text" placeholder="Taper votre recherche ici..." value={request} onChange={OnTypeRequest} />
           <button onClick={toggleSearchPanel}>Annuler</button>
         </div>
