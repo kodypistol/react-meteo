@@ -3,6 +3,8 @@
   margin: 0;
   min-width: 100vw;
   cursor: ew-resize;
+  -ms-touch-action: none;
+      touch-action: none;
 }
 
 .slider img {

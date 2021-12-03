@@ -7,6 +7,7 @@ import Footer from 'components/Footer';
 import ScrollHider from 'components/ScrollHider';
 import { AppContextProvider } from "components/AppContext/AppContext.js";
 import SoonPage from 'components/SoonPage';
+import ErrorPage from 'components/ErrorPage';
 
 import ProductDetails from "components/ProductDetails";
 
@@ -33,7 +34,7 @@ function App() {
           <SoonPage sectionName="Profil" />
         </Route>
         <Route path="/">
-          Erreur 404
+          <ErrorPage errorCode="404" />
         </Route>
       </Switch>
       <Footer />
