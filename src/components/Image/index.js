@@ -16,7 +16,7 @@ const Image = (props) => {
 
   if(isLoading) {
     return (
-      <div className={props.className + " image-placeholder"} style={{ backgroundColor: 'grey' }}>Loading image...</div>
+      <div className={props.className + " image-placeholder"} style={{ backgroundColor: 'grey', padding: "100%" }}>Loading image...</div>
     );
   }
 
