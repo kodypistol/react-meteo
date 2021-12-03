@@ -1,4 +1,5 @@
 import React from 'react';
+import styles from './styles.module.css'
 
 const CTAShareButton = () => {
 
@@ -22,8 +23,8 @@ const CTAShareButton = () => {
 
   return (
     <div>
-      <button className = "share-btn" onClick = {sharePage}>
-      Partager
+      <button className={styles.shareBtn} onClick = {sharePage}>
+      <img src="/assets/svg/share-button.svg" alt="Share Button"></img>
       </button>
     </div>
   );

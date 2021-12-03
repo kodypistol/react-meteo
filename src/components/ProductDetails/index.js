@@ -34,9 +34,15 @@ function ProductDetails (props) {
 
                 <p>{currentProduct.description}</p>
 
-                <CTALikeButton />
-                <CTAShareButton />
+                <div className="container-cta">
+                  <div className="cta">
+                    <CTAShareButton />
+                  </div>
+                  <div className="cta">
+                    <CTALikeButton className="like" id={currentProduct}/>
+                  </div>
 
+                </div>
                 {currentProduct.descriptionImages.map((image, index) => (
                     <div key={index} className="desc-image">
                         <Image src={image} alt="Illustration" />
