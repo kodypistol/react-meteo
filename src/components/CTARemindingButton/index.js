@@ -7,16 +7,21 @@ const CTARemindingButton = () => {
 
   const toggleReminder = () => {
 
-    setRemind(!isreminded);
+    const isNewReminded = !isreminded
+
+    setRemind(isNewReminded);
+    console.log('newReminded', isNewReminded)
 
     const currentTarget = window.event.target;
 
-    if (isreminded) {
+    if (isNewReminded) {
+
+      console.log('start animation')
       currentTarget.innerHTML = "<img src='/assets/svg/check-white.svg' alt='Check logo'></img>";
       currentTarget.animate([
         // keyframes
         { width: '100px' },
-        { width: '10px',
+        { width: '40px',
           backgroundColor: '#64BE71'
        }
       ], {
@@ -26,12 +31,13 @@ const CTARemindingButton = () => {
 
       currentTarget.style.backgroundColor = '#64BE71'
 
-    } else if (!isreminded) {
+    } else if (!isNewReminded) {
 
+      console.log('return animation');
 
         currentTarget.animate([
           // keyframes
-          { width: '10px' },
+          { width: '40px' },
           { width: '100px',
             backgroundColor: '#111111'
          }
@@ -39,7 +45,7 @@ const CTARemindingButton = () => {
           // timing options
           duration: 200,
         });
-
+      //
       setTimeout(() => {
         currentTarget.innerHTML = "Me prévenir";
         currentTarget.style.backgroundColor = '#111111'

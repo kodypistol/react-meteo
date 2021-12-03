@@ -39,7 +39,7 @@ function ProductDetails (props) {
                     <CTAShareButton />
                   </div>
                   <div className="cta">
-                    <CTALikeButton className="like" id={currentProduct}/>
+                    <CTALikeButton className="like" id={currentProduct.id}/>
                   </div>
 
                 </div>

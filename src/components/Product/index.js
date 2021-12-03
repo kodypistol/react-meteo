@@ -25,8 +25,9 @@ function Product (props) {
             {/* Actions */}
             <div className="padding actions">
               <div className="share">
-                <CTALikeButton id={props.product.id} />
                 <CTAShareButton />
+                <CTALikeButton id={props.product.id} />
+
               </div>
               <CTARemindingButton />
             </div>
