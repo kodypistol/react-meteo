@@ -8,7 +8,8 @@ import InputRange from "./InputRange";
 
 function Slider (props) {   
     const [currentImageIndex, setCurrentImageIndex] = React.useState([1]);
-
+    console.log("Render slider");
+    
     function GetUrl (currentIndex) {
         // Get base url
         let url = props.baseUrl;
